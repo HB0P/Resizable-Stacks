@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.hbop.balancedstacksizes.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "M_Codecs",
+    "M_Inventory",
+    "M_ItemStack"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
