@@ -1,6 +1,6 @@
 package dev.hbop.balancedstacksizes.mixin;
 
-import dev.hbop.balancedstacksizes.BalancedStackSizes;
+import dev.hbop.balancedstacksizes.util.StackSizeHelper;
 import net.minecraft.util.dynamic.Codecs;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -18,6 +18,6 @@ public abstract class M_Codecs {
             argsOnly = true
     )
     private static int rangedInt(int value) {
-        return value == 99 ? BalancedStackSizes.MAX_STACK_SIZE : value;
+        return value == 99 ? StackSizeHelper.MAX_STACK_SIZE : value;
     }
 }

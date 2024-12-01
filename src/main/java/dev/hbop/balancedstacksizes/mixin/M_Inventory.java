@@ -1,6 +1,6 @@
 package dev.hbop.balancedstacksizes.mixin;
 
-import dev.hbop.balancedstacksizes.BalancedStackSizes;
+import dev.hbop.balancedstacksizes.util.StackSizeHelper;
 import net.minecraft.inventory.Inventory;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.Constant;
@@ -15,6 +15,6 @@ public interface M_Inventory {
             constant = @Constant(intValue = 99)
     )
     default int getMaxCountPerStack(int constant) {
-        return BalancedStackSizes.MAX_STACK_SIZE;
+        return StackSizeHelper.MAX_STACK_SIZE;
     }
 }

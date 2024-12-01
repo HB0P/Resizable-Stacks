@@ -15,12 +15,16 @@
     ]
   },
   "mixins": [
-    "balancedstacksizes.mixins.json"
+    "balancedstacksizes.mixins.json",
+    {
+      "config": "balancedstacksizes.client.mixins.json",
+      "environment": "client"
+    }
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}",
-    "cloth-config": ">=16.0.141"
+    "owo-lib": ">=0.12.18+1.21.2"
   }
 }
