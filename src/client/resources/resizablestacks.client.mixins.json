@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "dev.hbop.balancedstacksizes.client.mixin",
+  "package": "dev.hbop.resizablestacks.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
     "M_DrawContext"

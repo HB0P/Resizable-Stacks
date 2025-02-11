@@ -1,14 +1,14 @@
-package dev.hbop.balancedstacksizes;
+package dev.hbop.resizablestacks;
 
-import dev.hbop.balancedstacksizes.util.ModConfig;
+import dev.hbop.resizablestacks.util.ModConfig;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class BalancedStackSizes implements ModInitializer {
+public class ResizableStacks implements ModInitializer {
 
-    public static final String MOD_ID = "balancedstacksizes";
+    public static final String MOD_ID = "resizablestacks";
     @SuppressWarnings("unused")
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static final ModConfig CONFIG = ModConfig.createAndLoad();

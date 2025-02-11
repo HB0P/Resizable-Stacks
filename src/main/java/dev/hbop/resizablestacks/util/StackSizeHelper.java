@@ -1,6 +1,6 @@
-package dev.hbop.balancedstacksizes.util;
+package dev.hbop.resizablestacks.util;
 
-import dev.hbop.balancedstacksizes.BalancedStackSizes;
+import dev.hbop.resizablestacks.ResizableStacks;
 import net.minecraft.item.ItemStack;
 
 public class StackSizeHelper {
@@ -14,15 +14,15 @@ public class StackSizeHelper {
     }
     
     private static int getRawModifiedStackSize(ItemStack stack) {
-        for (String id : BalancedStackSizes.CONFIG.stackSizes().keySet()) {
+        for (String id : ResizableStacks.CONFIG.stackSizes().keySet()) {
             if (id.startsWith("#")) {
                 if (stack.streamTags().anyMatch((tag) -> id.equals("#" + tag.id().toString()))) {
-                    return BalancedStackSizes.CONFIG.stackSizes().get(id);
+                    return ResizableStacks.CONFIG.stackSizes().get(id);
                 }
             }
             else {
                 if (id.equals(stack.getRegistryEntry().getIdAsString())) {
-                    return BalancedStackSizes.CONFIG.stackSizes().get(id);
+                    return ResizableStacks.CONFIG.stackSizes().get(id);
                 }
             }
         }

@@ -1,6 +1,6 @@
-package dev.hbop.balancedstacksizes.mixin;
+package dev.hbop.resizablestacks.mixin;
 
-import dev.hbop.balancedstacksizes.util.StackSizeHelper;
+import dev.hbop.resizablestacks.util.StackSizeHelper;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

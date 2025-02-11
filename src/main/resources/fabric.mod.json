@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "balancedstacksizes",
+  "id": "resizablestacks",
   "version": "${version}",
-  "name": "Balanced Stack Sizes",
+  "name": "Resizable Stacks",
   "description": "",
   "authors": ["HBOP"],
   "contact": {},
@@ -11,13 +11,13 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "dev.hbop.balancedstacksizes.BalancedStackSizes"
+      "dev.hbop.resizablestacks.ResizableStacks"
     ]
   },
   "mixins": [
-    "balancedstacksizes.mixins.json",
+    "resizablestacks.mixins.json",
     {
-      "config": "balancedstacksizes.client.mixins.json",
+      "config": "resizablestacks.client.mixins.json",
       "environment": "client"
     }
   ],
@@ -25,6 +25,6 @@
     "fabricloader": ">=${loader_version}",
     "fabric": "*",
     "minecraft": "${minecraft_version}",
-    "owo-lib": ">=0.12.18+1.21.2"
+    "owo-lib": ">=0.12.20+1.21.4"
   }
 }

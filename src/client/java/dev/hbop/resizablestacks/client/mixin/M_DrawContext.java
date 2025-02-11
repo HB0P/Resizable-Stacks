@@ -1,4 +1,4 @@
-package dev.hbop.balancedstacksizes.client.mixin;
+package dev.hbop.resizablestacks.client.mixin;
 
 import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.DrawContext;
@@ -15,7 +15,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class M_DrawContext {
 
     @Shadow @Final private MatrixStack matrices;
-
+    
+    // resize item count text
     @Inject(
             method = "drawStackCount",
             at = @At(
